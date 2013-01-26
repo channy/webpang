@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Fruit salad</title>
+  <link rel="stylesheet" href="anypang_files/styles.css">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.baptistebrunet.com/games/fruit_salad/images/favicon/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.baptistebrunet.com/games/fruit_salad/images/favicon/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.baptistebrunet.com/games/fruit_salad/images/favicon/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="http://www.baptistebrunet.com/games/fruit_salad/images/favicon/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="http://www.baptistebrunet.com/games/fruit_salad/images/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description" content="Match-3 puzzle-game written in HTML/CSS/JS">
+</head>
+<body style="font-color:#fff;background-color:#000; background-image: url('images/bg.png');">
+  <div id="page" style="padding-top:20px">
+    <div id="zone_score" class="cf">
+      <div class="col_score">
+        <div id="current_score" style="width:100%;text-align:center;">
+          <span id="current_score_num" style="color:#fff;font-size:2em;text-align:center;">0</span>
+        </div>
+      </div>
+      <div class="col_combo">
+        <div id="current_combo" style="color:#fff;font-size:1em;text-align:center;">
+          콤보 : <span id="current_combo_num">0</span>
+        </div>
+      </div>
+      <div class="col_moves">
+        <span id="moves"></span>
+      </div>
+    </div> <!-- /#zone_score -->
+
+    <div style="margin-top:50px;height: 640px; background-size: 160px 160px;" id="zone_jeu"><div class="icone icone_3" data-ligne="0" data-col="0" data-icone="3" style="top: 0px; left: 0px;"></div><div class="icone icone_4" data-ligne="0" data-col="1" data-icone="4" style="top: 0px; left: 80px;"></div><div class="icone icone_2" data-ligne="0" data-col="2" data-icone="2" style="top: 0px; left: 160px;"></div><div class="icone icone_6" data-ligne="0" data-col="3" data-icone="6" style="top: 0px; left: 240px;"></div><div class="icone icone_3" data-ligne="0" data-col="4" data-icone="3" style="top: 0px; left: 320px;"></div><div class="icone icone_1" data-ligne="0" data-col="5" data-icone="1" style="top: 0px; left: 400px;"></div><div class="icone icone_1" data-ligne="0" data-col="6" data-icone="1" style="top: 0px; left: 480px;"></div><div class="icone icone_6" data-ligne="0" data-col="7" data-icone="6" style="top: 0px; left: 560px;"></div><div class="icone icone_3" data-ligne="1" data-col="0" data-icone="3" style="top: 80px; left: 0px;"></div><div class="icone icone_1" data-ligne="1" data-col="1" data-icone="1" style="top: 80px; left: 80px;"></div><div class="icone icone_3" data-ligne="1" data-col="2" data-icone="3" style="top: 80px; left: 160px;"></div><div class="icone icone_4 hint" data-ligne="1" data-col="3" data-icone="4" style="top: 80px; left: 240px;"></div><div class="icone icone_4" data-ligne="1" data-col="4" data-icone="4" style="top: 80px; left: 320px;"></div><div class="icone icone_1" data-ligne="1" data-col="5" data-icone="1" style="top: 80px; left: 400px;"></div><div class="icone icone_5" data-ligne="1" data-col="6" data-icone="5" style="top: 80px; left: 480px;"></div><div class="icone icone_2" data-ligne="1" data-col="7" data-icone="2" style="top: 80px; left: 560px;"></div><div class="icone icone_1" data-ligne="2" data-col="0" data-icone="1" style="top: 160px; left: 0px;"></div><div class="icone icone_4" data-ligne="2" data-col="1" data-icone="4" style="top: 160px; left: 80px;"></div><div class="icone icone_2" data-ligne="2" data-col="2" data-icone="2" style="top: 160px; left: 160px;"></div><div class="icone icone_5" data-ligne="2" data-col="3" data-icone="5" style="top: 160px; left: 240px;"></div><div class="icone icone_4" data-ligne="2" data-col="4" data-icone="4" style="top: 160px; left: 320px;"></div><div class="icone icone_4" data-ligne="2" data-col="5" data-icone="4" style="top: 160px; left: 400px;"></div><div class="icone icone_3" data-ligne="2" data-col="6" data-icone="3" style="top: 160px; left: 480px;"></div><div class="icone icone_5" data-ligne="2" data-col="7" data-icone="5" style="top: 160px; left: 560px;"></div><div class="icone icone_6" data-ligne="3" data-col="0" data-icone="6" style="top: 240px; left: 0px;"></div><div class="icone icone_2" data-ligne="3" data-col="1" data-icone="2" style="top: 240px; left: 80px;"></div><div class="icone icone_3" data-ligne="3" data-col="2" data-icone="3" style="top: 240px; left: 160px;"></div><div class="icone icone_2" data-ligne="3" data-col="3" data-icone="2" style="top: 240px; left: 240px;"></div><div class="icone icone_5" data-ligne="3" data-col="4" data-icone="5" style="top: 240px; left: 320px;"></div><div class="icone icone_3" data-ligne="3" data-col="5" data-icone="3" style="top: 240px; left: 400px;"></div><div class="icone icone_3" data-ligne="3" data-col="6" data-icone="3" style="top: 240px; left: 480px;"></div><div class="icone icone_6" data-ligne="3" data-col="7" data-icone="6" style="top: 240px; left: 560px;"></div><div class="icone icone_4" data-ligne="4" data-col="0" data-icone="4" style="top: 320px; left: 0px;"></div><div class="icone icone_1" data-ligne="4" data-col="1" data-icone="1" style="top: 320px; left: 80px;"></div><div class="icone icone_1" data-ligne="4" data-col="2" data-icone="1" style="top: 320px; left: 160px;"></div><div class="icone icone_3" data-ligne="4" data-col="3" data-icone="3" style="top: 320px; left: 240px;"></div><div class="icone icone_6" data-ligne="4" data-col="4" data-icone="6" style="top: 320px; left: 320px;"></div><div class="icone icone_2" data-ligne="4" data-col="5" data-icone="2" style="top: 320px; left: 400px;"></div><div class="icone icone_5" data-ligne="4" data-col="6" data-icone="5" style="top: 320px; left: 480px;"></div><div class="icone icone_1" data-ligne="4" data-col="7" data-icone="1" style="top: 320px; left: 560px;"></div><div class="icone icone_4" data-ligne="5" data-col="0" data-icone="4" style="top: 400px; left: 0px;"></div><div class="icone icone_5" data-ligne="5" data-col="1" data-icone="5" style="top: 400px; left: 80px;"></div><div class="icone icone_4" data-ligne="5" data-col="2" data-icone="4" style="top: 400px; left: 160px;"></div><div class="icone icone_4" data-ligne="5" data-col="3" data-icone="4" style="top: 400px; left: 240px;"></div><div class="icone icone_3" data-ligne="5" data-col="4" data-icone="3" style="top: 400px; left: 320px;"></div><div class="icone icone_6" data-ligne="5" data-col="5" data-icone="6" style="top: 400px; left: 400px;"></div><div class="icone icone_5" data-ligne="5" data-col="6" data-icone="5" style="top: 400px; left: 480px;"></div><div class="icone icone_4" data-ligne="5" data-col="7" data-icone="4" style="top: 400px; left: 560px;"></div><div class="icone icone_6" data-ligne="6" data-col="0" data-icone="6" style="top: 480px; left: 0px;"></div><div class="icone icone_6" data-ligne="6" data-col="1" data-icone="6" style="top: 480px; left: 80px;"></div><div class="icone icone_2" data-ligne="6" data-col="2" data-icone="2" style="top: 480px; left: 160px;"></div><div class="icone icone_5" data-ligne="6" data-col="3" data-icone="5" style="top: 480px; left: 240px;"></div><div class="icone icone_3" data-ligne="6" data-col="4" data-icone="3" style="top: 480px; left: 320px;"></div><div class="icone icone_6" data-ligne="6" data-col="5" data-icone="6" style="top: 480px; left: 400px;"></div><div class="icone icone_4" data-ligne="6" data-col="6" data-icone="4" style="top: 480px; left: 480px;"></div><div class="icone icone_3" data-ligne="6" data-col="7" data-icone="3" style="top: 480px; left: 560px;"></div><div class="icone icone_3" data-ligne="7" data-col="0" data-icone="3" style="top: 560px; left: 0px;"></div><div class="icone icone_6" data-ligne="7" data-col="1" data-icone="6" style="top: 560px; left: 80px;"></div><div class="icone icone_3" data-ligne="7" data-col="2" data-icone="3" style="top: 560px; left: 160px;"></div><div class="icone icone_5" data-ligne="7" data-col="3" data-icone="5" style="top: 560px; left: 240px;"></div><div class="icone icone_2" data-ligne="7" data-col="4" data-icone="2" style="top: 560px; left: 320px;"></div><div class="icone icone_4" data-ligne="7" data-col="5" data-icone="4" style="top: 560px; left: 400px;"></div><div class="icone icone_5" data-ligne="7" data-col="6" data-icone="5" style="top: 560px; left: 480px;"></div><div class="icone icone_6" data-ligne="7" data-col="7" data-icone="6" style="top: 560px; left: 560px;"></div></div> <!-- /#zone_jeu -->
+
+    <div id="zone_message"></div> <!-- /#zone_message -->
+
+    <div id="msg_portrait">
+      <p>Please rotate your device to portrait mode</p>
+      <p><img src="anypang_files/iphone.png" alt="portrait mode smartphone"></p>
+    </div> <!-- /#msg_portrait -->
+
+  <script src="anypang_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="anypang_files/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.8.0.min.js"%3E%3C/script%3E'))</script>
+
+
+  <script type="text/javascript" src="anypang_files/init.js"></script>
+
+</body></html>

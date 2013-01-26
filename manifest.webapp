@@ -1,0 +1,15 @@
+{
+  "version": "0.0.01",
+  "name": "Anypang",
+  "description": "This is test application for Anypang for WebApp",
+  "launch_path": "index.html",
+  "icons": {
+    "64": "/images/icon-64.png",
+    "256": "/images/icon-256.png"
+  },
+  "developer": {
+    "name": "Channy Yun and Fluit Salad",
+    "url": "http://www.baptistebrunet.com/games/fruit_salad/"
+  },
+  "default_locale": "en"
+}
